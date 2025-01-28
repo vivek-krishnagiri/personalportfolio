@@ -54,38 +54,39 @@ header {
   color: #333;
 }
 
-/* Sections */
-section {
-  padding: 4rem 0;
-  text-align: center;
-}
-
+/* Hero Section (Full-Screen) */
 #hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to right, #007bff, #0056b3);
   color: white;
-  padding: 5rem 1rem;
+  text-align: center;
+  height: 100vh; /* Full screen */
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 #hero .cta {
   display: inline-block;
-  margin-top: 1rem;
   padding: 0.8rem 1.5rem;
   background: white;
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
 }
 
 #hero .cta:hover {
   background: #0056b3;
   color: white;
-}
-
-/* Footer */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
 }
