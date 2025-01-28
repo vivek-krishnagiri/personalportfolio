@@ -1,9 +1,4 @@
-// Example: Smooth scrolling for navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
+document.getElementById('get-to-know-me').addEventListener('click', () => {
+  document.getElementById('intro-canvas').classList.add('hidden');
+  document.getElementById('main-canvas').classList.remove('hidden');
 });
