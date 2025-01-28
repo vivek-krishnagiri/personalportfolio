@@ -1,4 +1,16 @@
+// Scroll to the About Me section on button click
 document.getElementById('get-to-know-me').addEventListener('click', () => {
-  document.getElementById('intro-canvas').classList.add('hidden');
-  document.getElementById('main-canvas').classList.remove('hidden');
+  document.getElementById('about').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
