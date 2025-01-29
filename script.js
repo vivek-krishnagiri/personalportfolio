@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const targetId = link.getAttribute("href").substring(1);
       const targetSection = document.getElementById(targetId);
-      const offset = 130; // Adjusted value for better spacing
+      const offset = 120; // Adjusted value for better spacing
       const elementPosition = targetSection.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition - offset;
 
