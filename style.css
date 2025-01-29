@@ -95,39 +95,24 @@ nav ul li a:hover {
 /* Sections */
 section {
   min-height: 100vh;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 80%;
+}
+
+/* Centered About Me Section (Slightly Higher) */
+#about {
+  max-width: 600px;
+  margin: 10% auto 0;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
-/* Project Cards */
-.project-card {
-  background: white;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-/* Fun Facts Section */
-#fun-facts {
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-#fun-facts ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#fun-facts li {
-  font-size: 1.2rem;
-  margin: 10px 0;
+/* Left-Aligned Experience Section for Future Video Addition */
+#experience {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  max-width: 40%;
+  margin-left: 5%;
 }
