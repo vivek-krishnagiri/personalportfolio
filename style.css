@@ -67,7 +67,7 @@ nav {
   top: 0;
   z-index: 1000;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
 }
 
 nav ul {
@@ -103,16 +103,44 @@ section {
 /* Centered About Me Section (Slightly Higher) */
 #about {
   max-width: 600px;
-  margin: 10% auto 0;
+  margin: 8% auto 0;
   text-align: center;
 }
 
-/* Left-Aligned Experience Section for Future Video Addition */
+/* Left-Aligned Experience Section with Video Space */
 #experience {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
   text-align: left;
-  max-width: 40%;
-  margin-left: 5%;
+  width: 80%;
+  margin: auto;
+}
+
+#experience .content {
+  max-width: 45%;
+}
+
+#experience h2 {
+  margin-bottom: 10px;
+}
+
+#experience .job-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#experience ul {
+  padding-left: 20px;
+}
+
+#experience .video-placeholder {
+  width: 50%;
+  height: 300px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #666;
 }
