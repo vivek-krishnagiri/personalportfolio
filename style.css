@@ -49,6 +49,14 @@ body {
   background: #f3f3f3;
 }
 
+/* Main Canvas Background */
+#main-canvas {
+  background: linear-gradient(135deg, #f0f0f0, #d9e4f5);
+  min-height: 100vh;
+  padding: 20px;
+  transition: background 0.5s ease-in-out;
+}
+
 /* Navigation Bar */
 nav {
   background: #333;
