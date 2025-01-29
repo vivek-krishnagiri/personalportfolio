@@ -1,16 +1,28 @@
-/* General styles */
+/* General Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
+  background: #f4f4f4;
+  scroll-behavior: smooth;
 }
 
 .hidden {
   display: none;
 }
 
-/* Intro canvas */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Intro Section */
 #intro-canvas {
   display: flex;
   flex-direction: column;
@@ -20,16 +32,6 @@ body {
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
   text-align: center;
-}
-
-#intro-canvas h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-#intro-canvas p {
-  font-size: 1.2rem;
-  margin: 10px 0 20px;
 }
 
 #intro-canvas button {
@@ -47,22 +49,72 @@ body {
   background: #f3f3f3;
 }
 
-/* Main canvas */
-#main-canvas {
-  padding: 20px;
+/* Navigation Bar */
+nav {
+  background: #333;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #6a11cb;
+}
+
+/* Sections */
 section {
   min-height: 100vh;
+  padding: 100px 20px 50px;
+  text-align: center;
+}
+
+/* Project Cards */
+.project-card {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Fun Facts Section */
+#fun-facts {
+  background: #fff;
   padding: 50px;
-  border-bottom: 1px solid #ddd;
 }
 
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+#fun-facts ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-section p {
+#fun-facts li {
   font-size: 1.2rem;
+  margin: 10px 0;
 }
