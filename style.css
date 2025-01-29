@@ -159,7 +159,8 @@ section {
 
 #experience .video-container video {
   width: 100%;
-  height: auto;
+  height: 100vh;
+  object-fit: cover;
   border-radius: 10px;
   pointer-events: none;
 }
