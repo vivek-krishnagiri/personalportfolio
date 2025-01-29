@@ -119,9 +119,13 @@ section {
 
 #experience .content {
   max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #experience h2 {
+  align-self: flex-start;
   margin-bottom: 10px;
 }
 
@@ -132,6 +136,7 @@ section {
 
 #experience ul {
   padding-left: 20px;
+  margin-top: 0;
 }
 
 #experience .video-placeholder {
