@@ -229,3 +229,79 @@ section {
   margin-top: 10px;
 }
 
+/* Fun Facts Section */
+#fun-facts {
+  position: relative;
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+#fun-facts h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#fun-facts ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+#fun-facts ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Fun Fact Images Styling */
+.fun-fact-images {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.fun-fact-images img {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Random positioning for images */
+.fun-fact-images img:nth-child(1) {
+  top: 20px;
+  left: 10%;
+  transform: rotate(-10deg);
+}
+
+.fun-fact-images img:nth-child(2) {
+  top: 50px;
+  right: 15%;
+  transform: rotate(8deg);
+}
+
+.fun-fact-images img:nth-child(3) {
+  bottom: 40px;
+  left: 20%;
+  transform: rotate(-5deg);
+}
+
+.fun-fact-images img:nth-child(4) {
+  bottom: 20px;
+  right: 10%;
+  transform: rotate(12deg);
+}
+
+.fun-fact-images img:nth-child(5) {
+  top: 30%;
+  left: 45%;
+  transform: rotate(-7deg);
+}
+
+/* Hover effect */
+.fun-fact-images img:hover {
+  transform: scale(1.1) rotate(0deg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
