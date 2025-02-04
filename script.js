@@ -4,13 +4,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const getToKnowMeBtn = document.getElementById('get-to-know-me');
   const navLinks = document.querySelectorAll('nav ul li a');
 
-  // Function to trigger confetti explosion
+  // Function to trigger confetti explosion outward from the button to the edges of the screen
   function triggerConfetti() {
-    confetti({
-      particleCount: 150,
-      spread: 100,
-      origin: { y: 0.6 }
-    });
+    const buttonRect = getToKnowMeBtn.getBoundingClientRect();
+    const buttonCenterX = buttonRect.left + buttonRect.width / 2;
+    const buttonCenterY = buttonRect.top + buttonRect.height / 2;
+
+    // Multiple bursts for a large explosion effect
+    for (let i = 0; i < 3; i++) {
+      setTimeout(() => {
+        confetti({
+          particleCount: 100,
+          spread: 160,
+          startVelocity: 40,
+          origin: {
+            x: buttonCenterX / window.innerWidth,
+            y: buttonCenterY / window.innerHeight
+          },
+          colors: ['#FF5733', '#33FF57', '#3357FF', '#FFD700']
+        });
+      }, i * 200);
+    }
   }
 
   getToKnowMeBtn.addEventListener('click', () => {
