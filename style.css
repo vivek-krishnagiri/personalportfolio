@@ -235,6 +235,8 @@ section {
   padding: 50px 20px;
   background: #fff;
   text-align: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #fun-facts h2 {
@@ -257,7 +259,7 @@ section {
 .fun-fact-images {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 100%;
 }
 
 .fun-fact-images img {
@@ -283,19 +285,19 @@ section {
 }
 
 .fun-fact-images img:nth-child(3) {
-  bottom: 40px;
+  bottom: 20px;
   left: 20%;
   transform: rotate(-5deg);
 }
 
 .fun-fact-images img:nth-child(4) {
-  bottom: 20px;
+  bottom: 10px;
   right: 10%;
   transform: rotate(12deg);
 }
 
 .fun-fact-images img:nth-child(5) {
-  top: 30%;
+  top: 35%;
   left: 45%;
   transform: rotate(-7deg);
 }
