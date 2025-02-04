@@ -305,3 +305,31 @@ section {
   transform: scale(1.1) rotate(0deg);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* Contact Section */
+#contact {
+  padding: 30px 20px;
+  background: #eaeaea;
+  text-align: center;
+  height: auto;
+}
+
+#contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
