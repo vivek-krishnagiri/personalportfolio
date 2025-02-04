@@ -257,12 +257,12 @@ section {
 .fun-fact-images {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 
 .fun-fact-images img {
   position: absolute;
-  width: 150px;
+  width: 250px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
