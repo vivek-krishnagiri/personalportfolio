@@ -309,9 +309,9 @@ section {
 /* Contact Section */
 #contact {
   padding: 30px 20px;
-  background: #eaeaea;
   text-align: center;
   height: auto;
+  margin-bottom: 0
 }
 
 #contact h2 {
