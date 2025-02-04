@@ -4,10 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const getToKnowMeBtn = document.getElementById('get-to-know-me');
   const navLinks = document.querySelectorAll('nav ul li a');
 
+  // Function to trigger confetti explosion
+  function triggerConfetti() {
+    confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.6 }
+    });
+  }
+
   getToKnowMeBtn.addEventListener('click', () => {
     introCanvas.classList.add('hidden');
     mainCanvas.classList.remove('hidden');
     mainCanvas.classList.add('fade-in');
+
+    // Trigger confetti explosion
+    triggerConfetti();
   });
 
   // Smooth scrolling for navigation links
