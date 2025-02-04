@@ -190,3 +190,42 @@ section {
   border-radius: 10px;
   pointer-events: none;
 }
+
+/* Projects Section */
+#projects {
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.project-card img, .project-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.project-card video {
+  margin-top: 10px;
+}
+
