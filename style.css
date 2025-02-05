@@ -200,8 +200,7 @@ section {
 .project-card {
   background: #fff;
   padding: 20px;
-  margin: 20px auto;
-  width: 85%;
+  margin: 20px 0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -232,7 +231,7 @@ section {
 
 /* Hover effect for project images and videos */
 .project-card img:hover, .project-card video:hover {
-  transform: scale(1.025);
+  transform: scale(1.0025);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
