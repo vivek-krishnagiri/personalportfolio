@@ -4,6 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const getToKnowMeBtn = document.getElementById('get-to-know-me');
   const navLinks = document.querySelectorAll('nav ul li a');
 
+  /* Project Media Hover Effect */
+  const projectMediaElements = document.querySelectorAll('.project-card img, .project-card video');
+
+  projectMediaElements.forEach(media => {
+    media.addEventListener('mouseenter', () => {
+      media.style.transform = 'scale(1.05)';
+      media.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+    });
+
+    media.addEventListener('mouseleave', () => {
+      media.style.transform = 'scale(1)';
+      media.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+    });
+  });
+
   // Function to trigger confetti explosion outward from the button to the edges of the screen
   function triggerConfetti() {
     const buttonRect = getToKnowMeBtn.getBoundingClientRect();
